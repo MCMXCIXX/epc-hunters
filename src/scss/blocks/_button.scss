@@ -1,0 +1,8 @@
+@use "../helpers" as *;
+.button {
+    display: flex;
+    gap: rem(20);
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-light);
+}

@@ -1,0 +1,12 @@
+@use "../helpers" as *;
+
+.main-screen {
+    
+    &__title {
+        font-family: var(--second-family);
+        font-size: fluid(90, 35);
+        text-align: center;
+        margin: 0;
+        margin-bottom: fluid(48, 15);
+    }
+}

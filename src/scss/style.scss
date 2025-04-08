@@ -1,0 +1,15 @@
+@use 'normalize.css';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'global';
+
+@use './blocks/button';
+@use './blocks/burger';
+@use './blocks/header';
+@use './blocks/logo';
+@use './blocks/bg-overlay';
+@use './blocks/main-screen';
+@use './blocks/roadmap';
+@use './blocks/roadmap-slider';
+

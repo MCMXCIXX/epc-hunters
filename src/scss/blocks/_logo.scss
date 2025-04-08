@@ -1,0 +1,14 @@
+@use "../helpers" as *;
+.logo {
+    font-family: var(--second-family);
+    font-size: fluid(32,20);
+    &__raw{
+        display: block;
+    }
+
+    &__link {
+        @include hover {
+            opacity: 1 ;
+          }
+    }
+}
