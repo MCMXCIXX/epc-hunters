@@ -76,6 +76,13 @@
       height: rem(217);
       flex-direction: column;
       gap: rem(20);
+      box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.35);
+      &.swiper-slide-prev {
+        &::after {
+          transition-duration: var(--transition-duration);
+          opacity: 0;
+        }
+      }
     }
   }
   &__line {
@@ -128,7 +135,7 @@
   }
   &__button {
     display: none;
-    @include mobile {
+    @include tablet {
       position: absolute;
       background: transparent;
       outline: none;

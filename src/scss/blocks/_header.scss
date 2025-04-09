@@ -7,8 +7,7 @@
     padding: fluid(40, 30) 0;
     font-size: fluid(20, 14);
     gap: rem(52);
-     
-    overflow: hidden;
+
     @include mobile {
         flex-direction: column;
     }
@@ -16,14 +15,19 @@
   &.is-active{
     background-color: var(--color-light);
     color: var(--color-dark);
+
     & .header__bottom-wrapper {
-        position: relative;
-        top: unset;
+        position: absolute;
+        top: 100px;
+        z-index: 100;
+        width: calc(100% + rem(30));
+        background-color: var(--color-light);
+        padding-bottom: rem(30);
     }
     & .header__burger {
         & .burger__text{
-            position: relative;
-            transform: translate(0);
+            width: auto;
+            opacity: 1;
             transition-duration: var(  --transition-duration);
         }
         & .burger__icon{

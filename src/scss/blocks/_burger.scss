@@ -24,8 +24,7 @@
         }
     }
   &__text {
-     
-    position: absolute;
-    transform: translateX(300px);
+     width: 0;
+     opacity: 0;
   }
 }

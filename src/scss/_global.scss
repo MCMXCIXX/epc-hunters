@@ -1,5 +1,6 @@
 @use "helpers" as *;
 html {
+  
     &.is-lock{
         overflow: hidden;
     }
@@ -11,7 +12,7 @@ body {
   font-family: var(--font-family);
   font-size: rem(14);
   color: var(--color-light);
-
+  overflow: hidden;
 }
 
 svg {

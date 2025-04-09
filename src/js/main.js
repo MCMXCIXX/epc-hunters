@@ -1,14 +1,12 @@
 import Swiper from "swiper";
-import { Navigation } from 'swiper/modules';
-import 'swiper/css/navigation';
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
 import "swiper/css";
 import "../scss/style.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   const headerBurger = document.querySelector(".header__burger");
-  
-
   headerBurger.addEventListener("click", () => {
     header.classList.toggle("is-active");
   });
@@ -58,37 +56,23 @@ document.addEventListener("DOMContentLoaded", function () {
     "(max-width: 1140px)",
     ".swiper-container",
     {
-      modules: [Navigation],
       loop: true,
-      spaceBetween: 32,
-      slidesPerView: 2,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.roadmap__button-next',
-        prevEl: '.roadmap__button-prev',
-        clickable: true,
-      },
-    },
-    someFunc
-  );
-  resizableSwiper(
-    "(max-width: 768px)",
-    ".swiper-container",
-    {
       modules: [Navigation],
-      loop: true,
       spaceBetween: 32,
       slidesPerView: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
       },
       navigation: {
-        nextEl: '.roadmap__button-next',
-        prevEl: '.roadmap__button-prev',
+        nextEl: ".roadmap__button-next",
+        prevEl: ".roadmap__button-prev",
         clickable: true,
       },
     },
